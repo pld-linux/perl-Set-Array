@@ -1,20 +1,21 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without tests # do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	Array
 Summary:	Set::Array - Arrays as objects with lots of handy methods
 Summary(pl):	Set::Array - tablice jako obiekty z wieloma porêcznymi metodami
 Name:		perl-Set-Array
-Version:	0.10
-Release:	3
+Version:	0.11
+Release:	1
 License:	?
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0329fb0a823ba44ed3da42c58c6808e5
+# Source0-md5:	919a9ab2fc76989d59c5bbb6775dfec0
 BuildRequires:	perl-devel >= 5.6
-%if %{?_without_tests:0}%{!?_without_tests:1}
+%if %{with tests}
 BuildRequires:	perl-Want >= 0.05
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -43,7 +44,7 @@ do porównywania, np. +, == itd.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
