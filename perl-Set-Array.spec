@@ -5,30 +5,34 @@
 %define	pdir	Set
 %define	pnam	Array
 Summary:	Set::Array - Arrays as objects with lots of handy methods
-#Summary(pl):	
+Summary(pl):	Set::Array - tablice jako obiekty z wieloma porêcznymi metodami
 Name:		perl-Set-Array
 Version:	0.10
-Release:	1
+Release:	2
 License:	?
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Want >= 0.05
 %endif
+BuildRequires:	rpm-perlprov >= 3.0.3-26
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Set::Array allows you to create arrays as objects and use OO-style methods
-on them.  Many convenient methods are provided here that appear in the
-FAQ's, the Perl Cookbook or posts from comp.lang.perl.misc.  In addition,
-there are Set methods with corresponding (overloaded) operators for the
-purpose of Set comparison, i.e. B<+>, B<==>, etc.
+Set::Array allows you to create arrays as objects and use OO-style
+methods on them. Many convenient methods are provided here that appear
+in the FAQ's, the Perl Cookbook or posts from comp.lang.perl.misc. In
+addition, there are Set methods with corresponding (overloaded)
+operators for the purpose of Set comparison, i.e. +, ==, etc.
 
-# %description -l pl
-# TODO
+%description -l pl
+Set::Array pozwala na tworzenie tablic jako obiektów i u¿ywanie na
+nich metod. Dostêpnych jest wiele wygodnych metod, które podane s± w
+FAQ-ach, Perl Cookbook oraz postach z grupy comp.lang.perl.misc.
+Dodatkowo s± metody Set z odpowiadaj±cymi (przeci±¿onymi) operatorami
+do porównywania, np. +, == itd.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
