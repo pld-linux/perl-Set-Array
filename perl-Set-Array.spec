@@ -10,7 +10,7 @@ Summary(pl):	Set::Array - tablice jako obiekty z wieloma porêcznymi metodami
 Name:		perl-Set-Array
 Version:	0.11
 Release:	1
-License:	?
+License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	919a9ab2fc76989d59c5bbb6775dfec0
