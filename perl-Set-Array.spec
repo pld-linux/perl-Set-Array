@@ -6,7 +6,7 @@
 %define		pdir	Set
 %define		pnam	Array
 Summary:	Set::Array - arrays as objects with lots of handy methods
-Summary(pl.UTF-8):   Set::Array - tablice jako obiekty z wieloma poręcznymi metodami
+Summary(pl.UTF-8):	Set::Array - tablice jako obiekty z wieloma poręcznymi metodami
 Name:		perl-Set-Array
 Version:	0.14
 Release:	1
