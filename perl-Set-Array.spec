@@ -8,12 +8,12 @@
 Summary:	Set::Array - arrays as objects with lots of handy methods
 Summary(pl.UTF-8):	Set::Array - tablice jako obiekty z wieloma poręcznymi metodami
 Name:		perl-Set-Array
-Version:	0.19
+Version:	0.23
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Set/%{pdir}-%{pnam}-%{version}.tgz
-# Source0-md5:	adf08971a9ca0eacc66a85274b7605c0
+# Source0-md5:	7291a3b10383791dc5bc52a0d1e9113a
 URL:		http://search.cpan.org/dist/Set-Array/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
