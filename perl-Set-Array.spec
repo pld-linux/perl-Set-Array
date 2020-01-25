@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Set
 %define		pnam	Array
 Summary:	Set::Array - arrays as objects with lots of handy methods
